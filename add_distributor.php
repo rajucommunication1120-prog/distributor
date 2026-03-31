@@ -4,3 +4,5 @@
   Password: <input type="password" name="password"><br>
   <button type="submit">Create Distributor</button>
 </form>
+print_r($_POST);
+exit;
