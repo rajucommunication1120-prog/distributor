@@ -1,35 +1,18 @@
-<?php
-$conn = mysqli_connect("localhost","username","password","recharge_app");
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Distributor</title>
+</head>
+<body>
 
-if(!$conn){
-  die("DB Failed");
-}
-?>
-<form method="POST" action="save_distributor.php">
-  Name: <input type="text" name="name"><br>
-  Mobile: <input type="text" name="mobile"><br>
-  <button type="submit">Create</button>
+<h2>Create Distributor</h2>
+
+<form method="POST" action="create_distributor.php">
+    <input type="text" name="name" placeholder="Enter Name" required><br><br>
+    <input type="text" name="mobile" placeholder="Enter Mobile" required><br><br>
+    <input type="password" name="password" placeholder="Enter Password" required><br><br>
+    <button type="submit">Create Distributor</button>
 </form>
-<?php
-include 'config.php';
 
-$name = $_POST['name'];
-$mobile = $_POST['mobile'];
-
-mysqli_query($conn, "INSERT INTO distributors (name,mobile) VALUES ('$name','$mobile')");
-
-echo "Distributor Created";
-?>
-<?php
-include 'config.php';
-
-$name = $_POST['name'];
-$mobile = $_POST['mobile'];
-
-mysqli_query($conn, "INSERT INTO distributors (name,mobile) VALUES ('$name','$mobile')");
-
-echo "Distributor Created";
-?>
-echo "Working";
-error_reporting (E_ALL);
-ini_set_(display_errors' 1);
+</body>
+</html>
