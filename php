@@ -31,3 +31,5 @@ mysqli_query($conn, "INSERT INTO distributors (name,mobile) VALUES ('$name','$mo
 echo "Distributor Created";
 ?>
 echo "Working";
+error_reporting (E_ALL);
+ini_set_(display_errors' 1);
