@@ -32,3 +32,13 @@ if(mysqli_query($conn,$query)){
     echo "Error: " . mysqli_error($conn);
 }
 ?>
+public_html/
+   retailer/
+      login.php
+      dashboard.php
+      recharge.php
+
+   distributor/
+      add_retailer.php
+
+   db.php
